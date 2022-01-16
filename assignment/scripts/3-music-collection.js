@@ -37,3 +37,21 @@ function showCollection(array){
 }
 //test the showCollection function
 showCollection(collection);
+
+//add a function named findByartist, parameter=string artist, create empty array for results
+function findByartist(artist){
+  let artistArray=[];
+  for (let i of array){
+    if (collection[i].artist ===  artist){
+      artistArray.push(collection.artist);
+    }
+    return true;
+  }
+console.log(artistArray);
+}
+//Test the function
+artistArray('Glass Animals');
+
+
+
+//(i = 0; i<collection.length; i++)
