@@ -1,3 +1,4 @@
+'use strict';
 console.log('***** Music Collection *****')
 let collection = [];
 
@@ -24,3 +25,15 @@ addToCollection('Nouvelle Era', 'CloZee',2021);
 addToCollection('Back to Forever', 'Lissie', 2013);
 //log the collection array
 console.log(collection);
+
+// add function showCollection
+function showCollection(array){
+//log the number of itmes in array
+  console.log(array.length);
+//loop over the array and log each album's information
+  for (let i of array) {
+    console.log(`${i.title} by ${i.artist} published in ${i.yearPublished}`);
+  }
+}
+//test the showCollection function
+showCollection(collection);
