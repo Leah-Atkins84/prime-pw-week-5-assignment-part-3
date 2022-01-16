@@ -41,16 +41,18 @@ showCollection(collection);
 //add a function named findByartist, parameter=string artist, create empty array for results
 function findByartist(artist){
   let artistArray=[];
-  for (let i of array){
+  for (let i = 0; i<collection.length; i++){
     if (collection[i].artist ===  artist){
-      artistArray.push(collection.artist);
+      artistArray.push(collection[i].artist)
     }
-    return true;
   }
 console.log(artistArray);
+
 }
 //Test the function
-artistArray('Glass Animals');
+findByartist('Glass Animals');
+findByartist('CloZee');
+findByartist('Nirvana');
 
 
 
