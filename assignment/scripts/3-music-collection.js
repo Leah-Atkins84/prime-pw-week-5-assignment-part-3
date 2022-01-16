@@ -53,7 +53,3 @@ console.log(artistArray);
 findByartist('Glass Animals');
 findByartist('CloZee');
 findByartist('Nirvana');
-
-
-
-//(i = 0; i<collection.length; i++)
